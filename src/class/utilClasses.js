@@ -1,4 +1,5 @@
 import pkg from '../util/util.js';
+import colors from '../util/Constants.js';
 
 class Util {
     /**
@@ -15,11 +16,13 @@ export default class UtilSon extends Util {
     /**
      * @param {*} client 
      * @param {*} token 
+     * @param {*} constants
      */
-    constructor(client, token) {
-        super(client, token);
+    constructor(client, token, constants) {
+        super(client, token, constants);
 
         this.client = pkg.client;
         this.token = pkg.token;
+        this.constants = colors;
     }
 }
