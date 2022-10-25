@@ -3,8 +3,8 @@ import colors from '../util/Constants.js';
 
 class Util {
     /**
-     * @param {*} client 
-     * @param {*} token 
+     * @param { Object } client 
+     * @param { String } token 
      */
     constructor(client, token) {
         this.client = client;
@@ -14,9 +14,9 @@ class Util {
 
 export default class UtilSon extends Util {
     /**
-     * @param {*} client 
-     * @param {*} token 
-     * @param {*} constants
+     * @param { Object } client 
+     * @param { String } token 
+     * @param { Object } constants
      */
     constructor(client, token, constants) {
         super(client, token, constants);
